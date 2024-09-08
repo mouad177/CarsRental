@@ -38,7 +38,7 @@ function Home() {
 <motion.h2 initial={{y:40,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1,delay:0.6}} className='text-4xl font-bold text-black dark:text-white md:-translate-x-24'>  بيع وتأجير السيارات بأسعار مميزة   </motion.h2>
         </div>
     </div>
-    <motion.div initial={{opacity:0,rotate:74}} transition={{duration:1}} animate={{opacity:1,rotate:80}} id='bg' className='z-10 w-[300px] h-[680px] duration-1000 top-[-30%] left-[70%] lg:w-[780px] lg:h-[500px] lg:left-[-20%] bg-orange-400 dark:bg-orange-500 absolute md:top-[0%] rotate-[80deg] md:w-[760px] md:h-[220px] md:left-[-45%]'></motion.div>
+    <motion.div initial={{opacity:0,rotate:74}} transition={{duration:1}} animate={{opacity:1,rotate:80}} id='bg' className='z-10 w-[900px] h-[400px] duration-1000 top-[-10%] left-[-10%] lg:w-[780px] lg:h-[500px] lg:left-[-20%] bg-orange-400 dark:bg-orange-500 absolute md:top-[0%] rotate-[80deg] md:w-[760px] md:h-[220px] md:left-[-45%]'></motion.div>
     </section>
 
 
