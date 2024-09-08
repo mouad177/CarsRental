@@ -23,7 +23,7 @@ import WhiteCar2 from '/MyLandingPageProjects/CarRental/src/assets/cars/WhiteCar
 import GraySportsCar from '/MyLandingPageProjects/CarRental/src/assets/cars/GraySportsCar.png'
 import BrownCar from '/MyLandingPageProjects/CarRental/src/assets/cars/BrownCar.png'
 import CarContactAnimation from '/MyLandingPageProjects/CarRental/src/assets/CarContactAnimation.json'
-
+import pizza from '/MyLandingPageProjects/PizzaProject/src/assets/img/pizza.png'
 
 function Home() {
   return (
@@ -31,26 +31,28 @@ function Home() {
         <Header/>
    <section id="Home" >
     <div className='flex flex-col md:flex-row items-center'>
-    <motion.img  initial={{x:-120,opacity:0,rotate:20}} transition={{duration:1}} animate={{opacity:1,x:0,rotate:0}} className='z-20' src={car} width={600} alt="Car" />
+    <motion.img  initial={{x:-120,opacity:0,rotate:20}} transition={{duration:1}} animate={{opacity:1,x:0,rotate:0}} className='z-20 md:w-[470px] lg:w-[600px]' src={car} width={600} alt="Car" />
 
         <div className='flex flex-col items-center text-center gap-10'>
-<motion.h1 initial={{y:40,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1,delay:0.4}} className='text-orange-400 text-7xl font-extrabold md:mr-24'> !اختر سيارتك  </motion.h1 >
-<motion.h2 initial={{y:40,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1,delay:0.6}} className='text-4xl font-bold text-black dark:text-white md:mr-20'>  بيع وتأجير السيارات بأسعار مميزة   </motion.h2>
+<motion.h1 initial={{y:40,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1,delay:0.4}} className='text-orange-400 text-7xl font-extrabold md:-translate-x-24'> !اختر سيارتك  </motion.h1 >
+<motion.h2 initial={{y:40,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1,delay:0.6}} className='text-4xl font-bold text-black dark:text-white md:-translate-x-24'>  بيع وتأجير السيارات بأسعار مميزة   </motion.h2>
         </div>
     </div>
-<motion.div initial={{opacity:0,rotate:74}} transition={{duration:1}} animate={{opacity:1,rotate:80}} id='bg' className='z-10 w-[400px] h-[680px] duration-1000 top-[-20%] left-[-80%] lg:w-[780px] lg:h-[500px] lg:left-[-20%] bg-orange-400 dark:bg-orange-500 absolute md:top-[0%] rotate-[80deg] md:w-[740px] md:h-[400px] md:left-[-30%]'></motion.div>
-   </section>
+    <motion.div initial={{opacity:0,rotate:74}} transition={{duration:1}} animate={{opacity:1,rotate:80}} id='bg' className='z-10 w-[400px] h-[680px] duration-1000 top-[-20%] left-[80%] lg:w-[780px] lg:h-[500px] lg:left-[-20%] bg-orange-400 dark:bg-orange-500 absolute md:top-[0%] rotate-[80deg] md:w-[760px] md:h-[220px] md:left-[-45%]'></motion.div>
+    </section>
+
+
    <section id='AboutUs' >
 
 <div className="flex flex-col md:flex-row-reverse items-center justify-around gap-7">
    
-<motion.div initial={{opacity:0,x:20}} viewport={{once:false,amount:0.5}} whileInView={{opacity:1,x:0}} transition={{duration:1}} ><Lottie  style={{width:600,height:500}} animationData={carAnimation} />
+<motion.div className='md:w-[400px] lg:w-[600px]' initial={{opacity:0,x:20}} viewport={{once:false,amount:0.5}} whileInView={{opacity:1,x:0}} transition={{duration:1}} ><Lottie  style={{width:600,height:500}} animationData={carAnimation} />
 </motion.div>
 
 
 <div className='flex flex-col items-center gap-16 text-center'>
-    <motion.h2 initial={{opacity:0,x:-20}} transition={{duration:1}} whileInView={{opacity:1,x:0}} viewport={{once:false,amount:0.5}} className='font-extrabold text-orange-300 text-6xl '>من نحن</motion.h2>
-    <motion.p initial={{opacity:0,y:30}} transition={{duration:1,delay:0.2}} whileInView={{opacity:1,y:0}} viewport={{once:false,amount:0.5}} className='text-2xl m-2 text-black dark:text-white px-5 text-center w-[100%] '>
+    <motion.h2 initial={{opacity:0,x:-20}} transition={{duration:1}} whileInView={{opacity:1,x:0}} viewport={{once:false,amount:0.5}} className='mt-14 md:ml-10 font-extrabold text-orange-300 text-6xl '>من نحن</motion.h2>
+    <motion.p initial={{opacity:0,y:30}} transition={{duration:1,delay:0.2}} whileInView={{opacity:1,y:0}} viewport={{once:false,amount:0.5}} className='text-2xl m-2 md:ml-10 md:max-w-[600px] text-black dark:text-white px-5 text-center w-[100%] '>
     مرحباً بكم في سيارات حديثة! نحن متخصصون في بيع واستئجار السيارات الجديدة والمستعملة. نقدم لكم خيارات متنوعة بجودة عالية وأسعار تنافسية. فريقنا هنا لمساعدتكم في العثور على السيارة المناسبة لاحتياجاتكم. شكراً لاختياركم سيارات حديثة</motion.p>
 </div>
 
@@ -186,6 +188,8 @@ function Home() {
 </motion.div>
 </div>
     </section>
+
+
     <section id="CarsSale">
     <motion.h2 initial={{opacity:0,x:-30}} whileInView={{opacity:1,x:0}} transition={{duration:1}} viewport={{amount:0.5,once:false}} className='font-extrabold text-6xl mb-10 text-center  text-green-400 mt-10'>سيارات للبيع</motion.h2>
     <div id="Cars" className='md:grid lg:grid-cols-3 md:grid-cols-2 mx-auto w-[80%]  flex flex-col justify-center items-center'>
@@ -257,6 +261,8 @@ function Home() {
 </motion.div >
 </div>
     </section>
+
+    
     <section id='Contact'>
 <motion.h2 initial={{opacity:0,x:-20}} whileInView={{opacity:1,x:0}} viewport={{amount:0.5,once:false}} transition={{duration:1,delay:0.6}}  className='text-black  dark:text-white font-extrabold text-center p-2 text-5xl mt-14'>Contact Us</motion.h2>
 
